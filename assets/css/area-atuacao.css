@@ -1,0 +1,46 @@
+#area-atuacao{
+    padding-top: 220px;
+    padding-bottom: 100px;
+    background-color: #c7661780;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.areas{
+    width: 100%;
+    height: 100%;
+    max-width: 1318px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#area-atuacao h2{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.area-item{
+    border: 3px solid rgb(238, 236, 236);
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+
+
+.area-item:hover{
+    transition: 550ms;
+    color: #c76617;
+    cursor: pointer;
+    border-color: #c76617;
+}
+
+.area-item{
+    font-weight: bold;
+    color: #1d1f36;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escritório de Advocacia</title>
+    <link rel="shortcut icon" href="./assets/img/logo/favi-icon-2.png" type="image/x-icon" />
+    <style>
+        body{
+            /* display: flex; */
+            margin: 0;
+            font-size: 100%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /* Criando uma grid */
+        .containner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* max-width: 1218px; */
+            margin: 0 auto;
+        }
+
+        .fale-conosco{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            /* border: 2px solid blue;
+             */
+            background-color: rgb(118, 119, 60);
+            flex-wrap: wrap;
+        }
+        /* estilização de formulario */
+        .form-env-msg{
+            background-color: #fff;
+            margin: 10px;
+            border-radius: 5px;
+            width: 400px;
+        }
+        .form-env-msg h2{
+            color: rgb(118, 119, 60);
+        }
+
+        .form-env-msg form{
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .form-env-msg form input, select, textarea{
+            padding: 10px;
+            border: 1px solid rgb(206, 206, 206);
+            border-radius: 5px;
+        }
+
+        /* .form-env-msg form input::selection{
+            border-color: 2px solid red;
+        } */
+
+        .endereco{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .endereco #cidade-input{
+            margin-left: 20px;
+            width: 100%;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        input#submit{
+            margin-bottom: 30px;
+            margin-top: 20px;
+            background-color: rgb(118, 119, 60);
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        input#submit:hover{
+            background-color: rgb(148, 151, 55);
+            transition: 550ms;
+        }
+        .sexo{
+            display: flex;
+            flex-direction: row;
+            font-size: 15px;
+        }
+        /* estilização de geolocalização */
+        .geo-local{
+            margin-bottom: 10px;
+        }
+        .geo-local iframe{
+            border-radius: 5px;
+        }
+        .geo-local h2{
+            color: #fff;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="containner">
+        <section class="fale-conosco">
+            <div class="form-env-msg">
+                <h2 align="center">Fale Conosco</h2>
+                <form action="">
+                    <input type="text" name="nome" placeholder="Informe seu nome"><br>
+                    <input type="tel" name="telefone" placeholder="(00)00000-00000"  pattern="[0-9]{5}-[0-9]{4}"><br>
+                    <input type="email" name="email" placeholder="exemplo@gmail.com"><br>
+                    <div class="sexo">
+                        <input type="checkbox" name="sexoMasculino"  id="s-m" name="cor" value="masculino">
+                        <label for="s-m">Masculino</label><br>
+                        <input type="checkbox" name="sexoFeminino" id="s-f" name="cor" value="feminino">
+                        <label for="s-f">Feminino</label><br>
+                    </div><br>
+                    <div class="endereco">
+                        <select name="estado" id="">
+                            <option value="MA">MA</option>
+                            <option value="SP">SP</option>
+                            <option value="RS">RS</option>
+                        </select><br>
+                        <input type="text" name="cidade" placeholder="cidade" id="cidade-input"><br>
+                    </div><br>
+                    <!-- <input type="text" name="estado" placeholder="estado"><br> -->
+                    <!-- <input type="text" name="mensagem" id="area-de-msg" placeholder="Ex.: Sua mensagem aqui"><br> -->
+                    <textarea name="mensagem" id="area-de-msg" placeholder="Ex.: Sua mensagem aqui"></textarea>
+                    <input type="submit" value="Enviar" id="submit">
+                </form>
+            </div>
+            <div class="geo-local">
+                <h2>Localização</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39463.419074775935!2d-44.270784352381604!3d-2.5256601045515596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68fb03467a7f3%3A0xd973b822f4fb6dea!2sInstituto%20Federal%20do%20Maranh%C3%A3o%20-%20Monte%20Castelo!5e0!3m2!1spt-BR!2sbr!4v1683262231083!5m2!1spt-BR!2sbr" width="390" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

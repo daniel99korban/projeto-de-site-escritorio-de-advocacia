@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/img/logo/favi-icon-2.png" type="image/x-icon" />
+    <style>
+        body{
+            /* display: flex; */
+            margin: 0;
+            font-size: 100%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /* Criando uma grid */
+        .containner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* max-width: 1218px; */
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        div p, a{
+            line-height: 1.8;
+        }
+
+        .rodape{
+            width: 100%;
+            /* display: flex;
+            align-items: center;
+            justify-content: space-evenly; */
+            /* border: 2px solid blue;
+             */
+            /* flex-wrap: wrap; */
+            
+        }
+
+        .rd-sc-containner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(121, 109, 46);
+        }
+
+        .rd-sc-containner a{
+            text-decoration: none;
+        }
+
+        .rd-sc-containner .left{
+            margin-left: 20px;
+        }
+
+        .rd-sc-containner .right{
+            margin-right: 20px;
+        }
+        
+        .info-link-containner{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            background-color: #504f16;
+            color: #fff;
+            padding: 30px 0px;
+        }
+
+        .empresa-sobre{
+            width: 305px;
+        }
+        .servicos{
+            display: inline;
+            width: 300px;
+            text-align: left;
+        }
+        .servicos ul{
+            text-indent: -40px;
+        }
+        .servicos a{
+            /* text-decoration: none; */
+            color: #fff;
+        }
+
+        .contact-endereco .item{
+            display: flex;
+            align-items: center;
+        }
+        .contact-endereco .item img{
+            /* width: 100%; */
+            height: 100%;
+        }
+        .cred-containner{
+            padding: 1px;
+            text-align: center;
+            color: #fff;
+            background-color: #1d1c0b;
+        }
+    </style>
+</head>
+<body>
+    <!-- Na seção “footer” deverá conter dados de endereço da Empresa, e-mail, fone (contato rápido), nome dos desenvolvedores, ícones de redes sociais (que serão links), além de dados copyright. Obs: “footer” deverá estar em todas as páginas internas criadas; -->
+    <div class="containner">
+        <footer class="rodape">
+            <section class="rd-sc-containner" style="color: #fff;">
+                <p class="left">Conecte-se conosco nas redes sociais:</p>
+                <div class="right">
+                    <!-- Instagram -->
+                    <a href="http://www.instagram.com/daniel_korban_l" target="_blank">
+                        <img src="./assets/img/icon/mdi_instagram.png" alt="">
+                    </a>
+                    <!-- Linkedin -->
+                    <a href="http://www.linkedin.com/in/daniel-lima-973a45227/" target="_blank">
+                        <img src="./assets/img/icon/mdi_linkedin.png" alt="">
+                    </a>
+                    <!-- GitHub -->
+                    <a href="http://github.com/daniel99korban" target="_blank">
+                        <img src="./assets/img/icon/mdi_github.png" alt="">
+                    </a>
+                </div>
+            </section>
+            <section class="info-link-containner">
+                <div class="empresa-sobre">
+                    <img src="./assets/img/imagens-de-logo-advocacia-png-4 1.png" alt="">
+                    <h3>Escritório de Advocacia</h3>
+                    <p>
+                        Oferecemos soluções jurídicas personalizadas em diversas áreas do direito, desde consultoria até litígios. Protegemos seus direitos e interesses
+                    </p>
+                </div>
+                <div class="servicos">
+                    <h3>Serviços</h3>
+                    <ul type="none">
+                        <li><a href="">Consultoria jurídica</a></li>
+                        <li><a href="">Elaboração de contratos</a></li>
+                        <li><a href="">Negociação e revisão de acordos</a></li>
+                        <li><a href="">Mediação e resolução de conflitos</a></li>
+                        <li><a href="">Assessoria tributária e fiscal</a></li>
+                        <li><a href="">Outros</a></li>
+                    </ul>
+                </div>
+                <div class="contact-endereco">
+                    <h3>Endereço</h3>
+                    <address class="item">
+                        <img src="./assets/img/icon/material-symbols_home-pin-outline.png" alt="" ><p>Av. Getúlio Vargas, MA, 65030-005</p>
+                    </address>
+                    <div class="item">
+                        <img src="./assets/img/icon/ic_round-email.png" alt=""><p>montecastelo@ifma.edu.br</p>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/icon/material-symbols_phone-enabled-sharp.png" alt=""><p>(98) 3218-9003</p>
+                    </div>
+                </div>
+            </section>
+            <section class="cred-containner">
+                <p>&copy; 2023 copyright: daniel99korban@gmail.com</p>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>

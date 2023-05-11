@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+*{
+    box-sizing:border-box;
+    letter-spacing: 1.5px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.linha-hr{
+    display: none;
+}
+
+body{
+    /* display: flex; */
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+/* Criando uma grid */
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    max-width: 140.5rem;
+
+    /* max-width: 1218px; */
+    margin: 0 auto;
+}

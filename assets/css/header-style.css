@@ -1,45 +1,150 @@
-@charset "UTF-8";
+
+header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #1d1f36;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#menu ul li .first-link{
+  color: #b37f55;
+}
+
+#menu ul li a:hover{
+  transition: 450ms;
+  color: #c76617;
+}
+
+.logo{
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
 
 nav{
-    position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  max-width: 1218px;
+  height: 20vh;
+}
+
+
+.nav-lista{
+  list-style: none;
+  display: flex;
+}
+
+.nav-lista li{
+  margin-left: 32px;
+}
+
+.menu-mobile{
+  cursor: pointer;
+  display: none;
+}
+
+.menu-mobile div{
+  width: 32px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px){
+  body{
+    /* overflow: hidden; */
+  }
+  nav{
+    width: 90%;
+    justify-content: space-between;
+  }
+ .nav-lista{
+    position: absolute;
+    top: 17vh;
+    right: 0;
+    width: 50vw;
+    height: 80vh;
+    background-color: #1d1f36;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 3;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .nav-lista li{
+    margin-left: 0;
+    opacity: 0;
+  }
+  .menu-mobile{
     display: block;
+  }
 }
 
-#top-header{
-    display: flex;
-    background-color: #575757;
-    padding: 10px;
-    padding-bottom: 10px;
+/* classe que é ativada atravez do javascript */
+.nav-lista.ativa{
+  opacity: 1;
+  /* transform: translateX(0); */
 }
 
-#logo-home img{
-    /* margin-left: 50px; */
-    position: relative;
-    float: left;
-    width: 100%;
-    margin: none;
-    padding: none;
+.menu-mobile.ativa .linha-1{
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+.menu-mobile.ativa .linha-2{
+  opacity: 0;
+}
+.menu-mobile.ativa .linha-3{
+  transform: rotate(45deg) translate(-5px, -7px);
 }
 
-.menu{
-    display: flex;
-    margin: auto;
-    margin-top: 80px;
-}
-.menu li a{
-    text-decoration: none;
-    color: #1b162b;
-    padding: 20px;
-}
-
-li{
-    list-style-type: none;
+@keyframes fade-nav-links{
+  from{
+    transform: translateX(50px);
+    opacity: 0;
+  }to{ 
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.menu li a:hover{
-    color: #BB9684;
-    transition: 500ms;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* media queries */
 /* Extra small devices (phones, 600px and down) */

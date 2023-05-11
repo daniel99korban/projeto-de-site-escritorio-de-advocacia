@@ -1,0 +1,82 @@
+.fale-conosco{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid blue;
+     */
+    /* background-color: rgb(118, 119, 60); */
+    background-color: #151624;
+    flex-wrap: wrap;
+    padding: 120px;
+}
+/* estilização de formulario */
+.form-env-msg{
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    width: 400px;
+}
+.form-env-msg h2{
+    color: #c76617;
+}
+
+.form-env-msg form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.form-env-msg form input, select, textarea{
+    padding: 10px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+}
+
+/* .form-env-msg form input::selection{
+    border-color: 2px solid red;
+} */
+
+.endereco{
+    display: flex;
+    flex-direction: row;
+}
+
+.endereco #cidade-input{
+    margin-left: 20px;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input#submit{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    background-color: #c76617;
+    color: #fff;
+    cursor: pointer;
+}
+
+input#submit:hover{
+    background-color: #d48a4d;
+    transition: 550ms;
+}
+.sexo{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+/* estilização de geolocalização */
+.geo-local{
+    margin-bottom: 10px;
+}
+.geo-local iframe{
+    border-radius: 5px;
+}
+.geo-local h2{
+    color: #fff;
+    text-align: center;
+}

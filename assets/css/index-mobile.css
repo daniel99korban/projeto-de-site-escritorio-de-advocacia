@@ -1,0 +1,46 @@
+
+
+@media screen and (max-width: 768px){
+    #escritorio img{
+        width: 350px;
+    }
+    .linha-hr{
+        display: block;
+        opacity: 0.3;
+        width: 200px;
+        height: 5px;
+        background-color: #c7661780;
+        border-style: none;
+        margin-top: -20px;
+    }
+    .card-advogado h3{
+        text-align: left;
+        margin-left: 50px;
+    }
+    .geo-local{
+        margin-top: 50px;
+    }
+    .rd-sc-containner .left{
+        display: none;
+    }
+    .grid .right{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .empresa-sobre{
+        align-content: center;
+        text-align: center;
+    }
+    .empresa-sobre p, h3{
+        text-align: left;
+    }
+    .contact-endereco h3{
+        text-align: center;
+    }
+    .contact-endereco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

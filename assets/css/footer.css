@@ -1,0 +1,82 @@
+div p, a{
+    line-height: 1.8;
+}
+
+.rodape{
+    width: 100%;
+    /* max-width: 1218px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+    /* border: 2px solid blue;
+    */
+    /* flex-wrap: wrap; */
+    
+}
+
+.rd-sc-containner{
+    /* background-color: rgb(121, 109, 46); */
+    background-color: #3b3c4d;
+    display: flex;
+    justify-content: center;
+}
+
+.grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    max-width: 1208px;
+}
+
+.rd-sc-containner a{
+    text-decoration: none;
+}
+
+.rd-sc-containner .left{
+    margin-left: 20px;
+}
+
+.info-link-containner{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    /* background-color: #504f16; */
+    background-color: #292a31;
+    color: #fff;
+    padding: 30px 0px;
+}
+
+.empresa-sobre{
+    width: 305px;
+}
+.servicos{
+    display: inline;
+    width: 300px;
+    text-align: left;
+}
+.servicos ul{
+    text-indent: -40px;
+}
+.servicos a{
+    /* text-decoration: none; */
+    color: #fff;
+}
+
+.contact-endereco .item{
+    display: flex;
+    align-items: center;
+}
+.contact-endereco .item img{
+    /* width: 100%; */
+    height: 100%;
+}
+.cred-containner{
+    padding: 1px;
+    text-align: center;
+    color: #fff;
+    background-color:#151624;
+    /* background-color: #1d1c0b; */
+}

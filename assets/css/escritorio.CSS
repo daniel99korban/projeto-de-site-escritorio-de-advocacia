@@ -1,0 +1,72 @@
+#escritorio img{
+    width: 600px;
+    border: 1px solid rgb(218, 218, 218);
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+#escritorio h2{
+    font-size: 2rem;
+    color: #1d1f36;
+}
+
+#escritorio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1218px;
+    flex-wrap: wrap;
+    /* background-image: url("https://prigoletarouco.com.br/wp-content/uploads/2021/03/bg01.jpg"); */
+    /* background-size: contain; */
+    /* opacity: 0.04; */
+    /* border: 2px solid red; */
+}
+
+#escritorio .escritorio-texto{
+    width: 500px;
+    padding: 50px;
+    /* border: 2px solid blue; */
+}
+
+.saiba-mais{
+    margin-bottom: 120px;
+    padding: 12px;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: #c76617;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.saiba-mais:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: #c76617;
+    border: 3px solid #c76617;
+    transition: 200ms;
+}
+
+/* trabalhando a responsividade */
+@media (max-width: 999px){
+    #escritorio .escritorio-texto{
+        margin-top: -130px;
+    }
+    #escritorio .escritorio-texto h2{
+        text-align: center;
+    }
+    .saiba-mais{
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #escritorio img{
+        width: 500px;
+    }
+}
